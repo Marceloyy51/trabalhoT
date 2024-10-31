@@ -1,0 +1,99 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo com fundo avermelhado em degradê */
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff4d4d, #ff9999);
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent; /* Fundo transparente */
+}
+
+/* Estilo dos Títulos */
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px black;
+}
+
+/* Estilo da Linha de Integrantes */
+.linha {
+    margin-bottom: 50px;
+    background-color: transparent; /* Fundo transparente */
+}
+.integrante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilo dos membros (imagem e nome) */
+.membro {
+    text-align: center; /* Centraliza o nome embaixo da imagem */
+}
+
+/* Estilo das imagens circulares */
+.integrante img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid black; /* Borda grossa */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.9); /* Sombra para efeito 3D */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+/* Nome dos integrantes */
+.membro p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* Efeito de 3D ao passar o mouse */
+.integrante img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho para criar um efeito de "zoom" */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .integrante img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .integrante img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .membro p {
+        font-size: 1rem;
+    }
+}
+h3{
+    font-weight: 600;
+    text-shadow: 3px 3px 3px black;
+}
